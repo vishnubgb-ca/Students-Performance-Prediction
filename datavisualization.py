@@ -13,7 +13,12 @@ def data_visualization():
     for i in col:
         plt.figure(figsize=(10,8))
         sns.boxplot(y=i,data=data)
-        plt.show()
+    plt.show()
+    for i in col:
+        plt.figure(figsize=(10,8))
+        sns.distplot(x=data[i])
+        plt.title(i)
+    plt.show()
     return data
 
 data_visualization()
