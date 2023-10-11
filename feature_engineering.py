@@ -10,7 +10,7 @@ def feature_engineering():
     # print(data)
     le=LabelEncoder()
     data['Extracurricular Activities']=le.fit_transform(data['Extracurricular Activities'])
-    data.to_csv("students_performance_prediction.csv")
+    data.to_csv("students_performance_prediction.csv",index=False)
     return data
 
 feature_engineering()
