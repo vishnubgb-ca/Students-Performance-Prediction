@@ -2,11 +2,11 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-from data_preprocessing import data_preprocessing
+from data_preprocessing import data_preprocess
 
 def data_visualization():
 
-    data = data_preprocessing()
+    data = data_preprocess()
     col=list(data.columns)
     col.remove("Extracurricular Activities")
     print(col)
