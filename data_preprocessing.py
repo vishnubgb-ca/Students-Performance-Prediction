@@ -1,8 +1,8 @@
 import pandas as pd
-from loading_data import loading_data
+from data_analysis import data_analysis
 
 def data_preprocess():
-    data = loading_data()
+    data = data_analysis()
     print(data)
     return data
 
