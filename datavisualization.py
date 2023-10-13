@@ -11,16 +11,16 @@ def data_visualization():
     col.remove("Extracurricular Activities")
     print(col)
     for i in col:
-        plt.figure(figsize=(10,8))
+        plt.figure(figsize=(14,12))
         sns.boxplot(y=i,data=data)
     plt.show()
     for i in col:
-        plt.figure(figsize=(12,10))
+        plt.figure(figsize=(14,12))
         sns.distplot(x=data[i])
         plt.title(i)
     plt.show()
     df=data.drop("Extracurricular Activities",axis=1)
-    plt.figure(figsize=(16,14))
+    plt.figure(figsize=(14,12))
     sns.heatmap(df.corr(), linewidth=1, annot=True,  cmap="coolwarm", fmt=".4f")
     plt.show()
     return data
