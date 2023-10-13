@@ -20,7 +20,7 @@ def data_visualization():
         plt.title(i)
     plt.show()
     df=data.drop("Extracurricular Activities",axis=1)
-    plt.figure(figsize=(13,13))
+    plt.figure(figsize=(16,14))
     sns.heatmap(df.corr(), linewidth=1, annot=True,  cmap="coolwarm", fmt=".4f")
     plt.show()
     return data
