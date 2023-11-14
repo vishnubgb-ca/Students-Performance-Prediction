@@ -7,7 +7,7 @@ warnings.filterwarnings("ignore")
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-
+import plotly.figure_factory as ff
 import plotly.io as pio
 import io
 from PIL import Image
