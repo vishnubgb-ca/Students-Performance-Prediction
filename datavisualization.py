@@ -1,10 +1,16 @@
+from data_preprocessing import data_preprocess
 import pandas as pd
+import plotly.express as px
+from IPython.display import Image
+import warnings
+warnings.filterwarnings("ignore")
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-from data_preprocessing import data_preprocess
-import plotly.figure_factory as ff
-import plotly.express as px
+
+import plotly.io as pio
+import io
+from PIL import Image
 
 def data_visualization():
 
