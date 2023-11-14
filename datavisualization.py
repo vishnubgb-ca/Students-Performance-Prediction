@@ -55,7 +55,7 @@ def data_visualization():
             image_list[index] = image  # overwrite byte image data in list, replace with PIL converted image data
 
     # pop first item from image_list, use that to access .save(). Then refer back to image_list to append the rest
-    image_list.pop(0).save(r'./Student Performance Prediction#586.pdf', 'PDF',
+    image_list.pop(0).save(r'./Student Performance Prediction#587.pdf', 'PDF',
                         save_all=True, append_images=image_list, resolution=100.0)  # TODO improve resolution
     
     return data
