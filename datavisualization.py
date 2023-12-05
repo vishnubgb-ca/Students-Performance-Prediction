@@ -11,9 +11,12 @@ import plotly.figure_factory as ff
 import plotly.io as pio
 import io
 from PIL import Image
+import string
+
 # a =[]
 def data_visualization():
     count = 0
+    letters = list(string.ascii_lowercase)
     data = data_preprocess()
     col=list(data.columns)
     col.remove("Extracurricular Activities")
@@ -25,7 +28,7 @@ def data_visualization():
         #fig.update_layout(plot_bgcolor = "plotly_dark")
         fig.update_xaxes(showgrid=False,zeroline=False)
         fig.update_yaxes(showgrid=False,zeroline=False)
-        fig.write_image(f"{count}_box_{i}.jpg")
+        fig.write_image(f"{letters[count]}_box_{i}.jpg")
         # a.append(fig)
     for i in col:
         count += 1
@@ -34,7 +37,7 @@ def data_visualization():
         #fig.update_layout(plot_bgcolor = "plotly_dark")
         fig.update_xaxes(showgrid=False,zeroline=False)
         fig.update_yaxes(showgrid=False,zeroline=False)
-        fig.write_image(f"{count}_dist_{i}.jpg")
+        fig.write_image(f"{letters[count]}_dist_{i}.jpg")
         # a.append(fig)
     df=data.drop("Extracurricular Activities",axis=1)
     y=df.corr().columns.tolist()
@@ -43,7 +46,7 @@ def data_visualization():
     fig = ff.create_annotated_heatmap(z,x=y,y=y,annotation_text=z_text,colorscale=px.colors.sequential.Cividis_r,showscale=True)
     fig.update_layout(template='plotly_dark')
     count += 1
-    fig.write_image(f"{count}_heatmap.jpg")
+    fig.write_image(f"{letters[count]}_heatmap.jpg")
     # a.append(fig)
 
 
