@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage("Install Requirements"){
             steps{
-                sh 'pip3 install requirements.txt'
+                sh 'pip3 install -r requirements.txt'
             }
         }
         stage("Extract Data"){
