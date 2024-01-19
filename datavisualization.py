@@ -28,7 +28,7 @@ def data_visualization():
         #fig.update_layout(plot_bgcolor = "plotly_dark")
         fig.update_xaxes(showgrid=False,zeroline=False)
         fig.update_yaxes(showgrid=False,zeroline=False)
-        fig.write_image(f"{letters[count]}_box_{i}.jpg")
+        fig.write_image(f"box_{i}.jpg")
         # a.append(fig)
     for i in col:
         count += 1
@@ -37,7 +37,7 @@ def data_visualization():
         #fig.update_layout(plot_bgcolor = "plotly_dark")
         fig.update_xaxes(showgrid=False,zeroline=False)
         fig.update_yaxes(showgrid=False,zeroline=False)
-        fig.write_image(f"{letters[count]}_dist_{i}.jpg")
+        fig.write_image(f"dist_{i}.jpg")
         # a.append(fig)
     df=data.drop("Extracurricular Activities",axis=1)
     y=df.corr().columns.tolist()
