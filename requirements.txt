@@ -3,3 +3,4 @@ SimpleITK
 segment-anything-py
 monai
 mlflow
+tqdm
