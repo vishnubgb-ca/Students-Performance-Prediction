@@ -4,3 +4,4 @@ segment-anything-py
 monai
 mlflow
 tqdm
+cc3d
