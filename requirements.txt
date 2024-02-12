@@ -2,6 +2,5 @@ kaleido
 SimpleITK
 segment-anything-py
 monai
-mlflow
 tqdm
-cc3d
+connected-components-3d
