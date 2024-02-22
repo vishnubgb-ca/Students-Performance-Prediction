@@ -4,3 +4,10 @@ segment-anything-py
 monai
 tqdm
 connected-components-3d
+pandas
+numpy
+plotly
+scikit-learn
+IPython
+matplotlib
+seaborn
