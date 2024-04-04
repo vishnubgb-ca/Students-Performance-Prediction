@@ -12,3 +12,4 @@ IPython
 matplotlib
 seaborn
 imblearn
+geopy
