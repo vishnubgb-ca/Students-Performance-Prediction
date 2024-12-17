@@ -10,7 +10,7 @@ pipeline{
         }
         stage("Extract Data"){
             steps{
-                sh 'python3 loading_data.py'
+                sh 'python3 loading_data.py --prefix=/mnt/user-data/jenkins'
             }
         }
         stage("Data Analysis"){
